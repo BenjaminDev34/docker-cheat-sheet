@@ -6,15 +6,22 @@
 Les images sont l'un des deux blocs de construction principaux de Docker (l'autre étant les "Conteneurs"). Les images sont des plans/modèles pour les conteneurs.
 Elles sont en lecture seule et contiennent l'application ainsi que l'environnement nécessaire à l'application (système d'exploitation, runtimes, outils, etc.).
 Les images ne s'exécutent pas elles-mêmes, mais peuvent être exécutées sous forme de conteneurs.
-Les images sont soit pré-construites (par exemple, des images officielles que vous trouvez sur DockerHub) soit vous construisez vos propres images en définissant un Dockerfile. 
+Les images sont soit pré-construites (par exemple, des images officielles que vous trouvez sur DockerHub)
+soit vous construisez vos propres images en définissant un Dockerfile. 
 
-Les Dockerfiles contiennent des instructions qui sont exécutées lors de la construction d'une image (`docker build .`), chaque instruction crée alors une couche dans l'image.
+Les Dockerfiles contiennent des instructions qui sont exécutées lors de la construction d'une image (`docker build .`),
+chaque instruction crée alors une couche dans l'image.
 Les couches sont utilisées pour reconstruire et partager efficacement les images.
 L'instruction CMD est spéciale : elle n'est pas exécutée lors de la construction de l'image mais lorsqu'un conteneur est créé et démarré à partir de cette image.
 
 ### Conteneurs
 
-Les conteneurs sont l'autre élément clé de Docker. Les conteneurs sont des instances en cours d'exécution des images. Lorsque vous créez un conteneur (via `docker run`), une fine couche en lecture-écriture est ajoutée au-dessus de l'image. Plusieurs conteneurs peuvent donc être démarrés à partir d'une seule et même image. Tous les conteneurs s'exécutent en isolation, c'est-à-dire qu'ils ne partagent aucun état d'application ni données écrites. Vous devez créer et démarrer un conteneur pour démarrer l'application qui se trouve à l'intérieur d'un conteneur. Ce sont donc les conteneurs qui sont finalement exécutés - tant en développement qu'en production.
+Les conteneurs sont l'autre élément clé de Docker. Les conteneurs sont des instances en cours d'exécution des images.
+Lorsque vous créez un conteneur (via `docker run`), une fine couche en lecture-écriture est ajoutée au-dessus de l'image.
+Plusieurs conteneurs peuvent donc être démarrés à partir d'une seule et même image.
+Tous les conteneurs s'exécutent en isolation, c'est-à-dire qu'ils ne partagent aucun état d'application ni données écrites.
+Vous devez créer et démarrer un conteneur pour démarrer l'application qui se trouve à l'intérieur d'un conteneur.
+Ce sont donc les conteneurs qui sont finalement exécutés - tant en développement qu'en production.
 
 ### Commandes Docker Clés
 
