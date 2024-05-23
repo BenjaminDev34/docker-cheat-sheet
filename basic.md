@@ -1,4 +1,4 @@
-```markdown
+
 ## Images & Conteneurs
 
 ### Images
@@ -46,4 +46,3 @@ Important : Cela peut être accablant ! Vous n'aurez besoin que d'une fraction d
   - `-a` : Supprimer toutes les images stockées localement
 - `docker push IMAGE` : Pousser une image vers DockerHub (ou un autre registre) - le nom/l'étiquette de l'image doit inclure le nom de dépôt/url
 - `docker pull IMAGE` : Tirer (télécharger) une image de DockerHub (ou un autre registre) - cela se fait automatiquement si vous exécutez simplement `docker run IMAGE` et que l'image n'a pas été tirée auparavant
-```
