@@ -29,7 +29,7 @@ Pour une liste complète de toutes les commandes, ajoutez `--help` après une co
 
 Important : Cela peut être accablant ! Vous n'aurez besoin que d'une fraction de ces fonctionnalités et commandes en réalité !
 
-- `docker build .` : Construire un Dockerfile et créer votre propre image basée sur le fichier
+- `docker build .` : Construire une image a partir d'un dockefile créer votre propre image basée sur le fichier
   - `-t NAME:TAG` : Attribuer un NOM et une ÉTIQUETTE à une image
 - `docker run IMAGE_NAME` : Créer et démarrer un nouveau conteneur basé sur l'image IMAGE_NAME (ou utiliser l'id de l'image)
   - `-p portHote:portContainer` : Permet de lier le port du container à un port de l'hote pour accéder à l'app 
