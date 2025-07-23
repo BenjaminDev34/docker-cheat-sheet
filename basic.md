@@ -32,6 +32,7 @@ Important : Cela peut être accablant ! Vous n'aurez besoin que d'une fraction d
 - `docker build .` : Construire un Dockerfile et créer votre propre image basée sur le fichier
   - `-t NAME:TAG` : Attribuer un NOM et une ÉTIQUETTE à une image
 - `docker run IMAGE_NAME` : Créer et démarrer un nouveau conteneur basé sur l'image IMAGE_NAME (ou utiliser l'id de l'image)
+  - `-p portHote:portContainer` : Permet de lier le port du container à un port de l'hote pour accéder à l'app 
   - `--name NAME` : Attribuer un NOM au conteneur. Le nom peut être utilisé pour arrêter et supprimer, etc.
   - `-d` : Exécuter le conteneur en mode détaché - c'est-à-dire que la sortie imprimée par le conteneur n'est pas visible, l'invite de commande / terminal N'ATTEND PAS que le conteneur s'arrête
   - `-it` : Exécuter le conteneur en mode "interactif" - le conteneur / l'application est alors préparé pour recevoir des entrées via l'invite de commande / terminal. Vous pouvez arrêter le conteneur avec CTRL + C lorsque vous utilisez le flag `-it`
