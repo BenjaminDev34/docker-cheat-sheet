@@ -10,7 +10,7 @@ Docker Compose est un outil permettant de définir et de gérer des applications
 
 ## Syntaxes de base
 
-Voici les éléments principaux d'un fichier `docker-compose.yml` :
+Voici les éléments principaux d'un fichier `compose.yaml` :
 
 ### 1. Services
 Définit les conteneurs à exécuter.
